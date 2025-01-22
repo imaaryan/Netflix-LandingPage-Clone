@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../fonts/NetflixSans_W_Rg.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "NetflixSans-Mid";
+  src: url("../fonts/NetflixSans_W_Md.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "NetflixSans-Bold";
+  src: url("../fonts/NetflixSans_W_Bd.woff2") format("woff2");
+  font-weight: 900;
+}
+
+* {
+  font-family: "NetflixSans";
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+html,
+body {
+  font-family: NetflixSans;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  overflow-x: hidden;
+}
+
+.parent {
+  width: 100%;
+}
+
+.hero-section {
+  height: 100vh;
+}
+
+.bg-image {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.545) 40%,
+      rgba(0, 0, 0, 0.949)
+    ),
+    url(../media/images/hero-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo img {
+  width: 160px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 140px 20px 140px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  width: 40%;
+  font-family: "NetflixSans-Bold";
+  font-size: 56px;
+  font-weight: 900;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+}
+
+.btn {
+  font-family: "NetflixSans-Mid";
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 15px 8px 15px;
+  background-color: #e50914;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c40710;
+}
+
+.hero-title {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.price-cta {
+  font-family: "NetflixSans-Mid";
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  font-family: 16px;
+  margin-top: 20px;
+}
+
+.curve-container {
+  margin: -120px;
+  position: relative;
+  height: 6.25rem;
+  z-index: 0;
+}
+
+.curve-container .curve {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border: solid 0.1rem transparent;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom: none;
+  background: radial-gradient(
+      50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    black;
+  background-clip: padding-box;
+  width: 120%;
+  left: -10%;
+  border-top: 0.3rem solid #c40710;
+  overflow: hidden;
+}
+
+.register {
+  width: 40%;
+}
+
+form > div {
+  display: flex;
+  gap: 7px;
+}
+
+#emailInput {
+  background-color: #101010cc;
+  color: #f5f5f5e4;
+  font-size: 16px;
+  width: 60%;
+  padding: 20px 14px 20px 14px;
+  border-radius: 4px;
+  border-width: 0.5px;
+  border-color: #ffffff6b;
+}
+
+#emailInput::placeholder {
+  color: #ffffffda;
+}
+
+#btnInput {
+  width: 40%;
+  font-family: "NetflixSans-Mid";
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  background-color: #e50914;
+  border-radius: 4px;
+  border-width: 0px;
+  cursor: pointer;
+  margin: 1px;
+padding-left: 30px;
+
+  /* Arrow */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 1024 1024'%3E%3Cpath fill='%23fff' d='M338.752 104.704a64 64 0 0 0 0 90.496l316.8 316.8l-316.8 316.8a64 64 0 0 0 90.496 90.496l362.048-362.048a64 64 0 0 0 0-90.496L429.248 104.704a64 64 0 0 0-90.496 0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px top 50%;
+  background-size: 22px auto;
+}
+
+#btnInput:hover {
+  background-color: #c40710;
+}
+
+.section2 {
+  position: relative;
+  padding: 20px 140px 20px 140px;
+  width: 100%;
+  z-index: 3;
+  background-color: black;
+  margin-top: 80px;
+  height: 600px;
+}
+
+.heading {
+  font-family: "NetflixSans-Mid";
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+select {
+  font-size: 16px;
+  background-color: #0f0f0f;
+  border-radius: 4px;
+}
+
+#region {
+  /* Reset. */
+  border: unset;
+
+  /* Style */
+  padding: 10px 25px 10px 10px;
+  border: 1px solid #ffffff6b;
+
+  /* Arrow */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 8px auto;
+}
+
+#type {
+  /* Reset. */
+  border: unset;
+
+  /* Style */
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #ffffff6b;
+
+  /* Arrow */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 8px auto;
+}
+
+.lang-btn::before {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5h14M9 2v3m4 0q-2 8-9 11m2-7q2 4 6 6m1 7l5-11l5 11m-1.4-3h-7.2'/%3E%3C/svg%3E");
+}
+
+#lang {
+  position: relative;
+  z-index: 0;
+  margin-left: -30px;
+  /* Reset. */
+  border: unset;
+
+  /* Style */
+  padding: 10px 30px 10px 30px;
+  border: 1px solid #ffffff6b;
+
+  /* Arrow */
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 8px auto;
+}
+
+.trend-filter {
+  display: flex;
+  gap: 20px;
+}

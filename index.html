@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="hero-section bg-image black-overlay">
+        <nav>
+          <div class="logo"><img src="./media/images/logo.png" alt="" /></div>
+          <div class="nav-link">
+            <div class="lang-btn">
+              <select name="" id="lang">
+                <option value="India">English</option>
+                <option value="Global">हिन्दी</option>
+              </select>
+            </div>
+            <div class="btn">Sign in</div>
+          </div>
+        </nav>
+        <div class="hero-title">
+          <h1>Unlimited movies, TV shows and more</h1>
+          <span class="price-cta">Starts at ₹149. Cancel at any time.</span>
+          <p>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div class="register">
+            <form action="" method="post">
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="emailInput"
+                  placeholder="Email address"
+                />
+                <button type="submit" id="btnInput">Get Started</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="curve-container">
+        <div class="curve"></div>
+      </div>
+      <div class="section2">
+        <div class="heading">Trending Now</div>
+        <div class="trend-filter">
+          <select name="" id="region">
+            <option value="India">India</option>
+            <option value="Global">Global</option>
+          </select>
+          <select name="" id="type">
+            <option value="India">Movies</option>
+            <option value="Global">Shows</option>
+          </select>
+        </div>
+        <div class="caraousal"></div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
