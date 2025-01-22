@@ -180,7 +180,7 @@ form > div {
   border-width: 0px;
   cursor: pointer;
   margin: 1px;
-padding-left: 30px;
+  padding-left: 30px;
 
   /* Arrow */
   appearance: none;
@@ -197,11 +197,9 @@ padding-left: 30px;
 .section2 {
   position: relative;
   padding: 20px 140px 20px 140px;
-  width: 100%;
   z-index: 3;
   background-color: black;
   margin-top: 80px;
-  height: 600px;
 }
 
 .heading {
@@ -281,4 +279,37 @@ select {
 .trend-filter {
   display: flex;
   gap: 20px;
+}
+
+.caraousal {
+  margin: 25px 0px 40px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 15px;
+}
+
+.caraousal div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.caraousal img {
+  border-radius: 10px;
+  width: auto;
+  height: 260px;
+}
+
+.rank {
+  position: absolute;
+  align-self: self-start;
+  justify-self: self-end;
+  font-family: NetflixSans-Bold;
+  font-size: 100px;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: #000000;
+  text-shadow: 0px 0px 32px rgba(0, 0, 0, 1);
 }
