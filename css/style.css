@@ -1,16 +1,22 @@
 @font-face {
   font-family: "NetflixSans";
   src: url("../fonts/NetflixSans_W_Rg.woff2") format("woff2");
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
-  font-family: "NetflixSans-Mid";
+  font-family: "NetflixSans";
   src: url("../fonts/NetflixSans_W_Md.woff2") format("woff2");
   font-weight: 600;
 }
 @font-face {
-  font-family: "NetflixSans-Bold";
+  font-family: "NetflixSans";
   src: url("../fonts/NetflixSans_W_Bd.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("../fonts/NetflixSans_W_Blk.woff2") format("woff2");
   font-weight: 900;
 }
 
@@ -23,7 +29,7 @@
 
 html,
 body {
-  font-family: NetflixSans;
+  font-family: "NetflixSans";
   width: 100%;
   height: 100%;
   display: flex;
@@ -80,16 +86,16 @@ nav {
 }
 
 h1 {
-  width: 40%;
-  font-family: "NetflixSans-Bold";
+  width: 38%;
+  font-family: "NetflixSans";
   font-size: 56px;
   font-weight: 900;
   text-align: center;
-  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke-width: 1px; */
 }
 
 .btn {
-  font-family: "NetflixSans-Mid";
+  font-family: "NetflixSans";
   font-size: 14px;
   font-weight: 600;
   padding: 8px 15px 8px 15px;
@@ -115,7 +121,7 @@ h1 {
 }
 
 .price-cta {
-  font-family: "NetflixSans-Mid";
+  font-family: "NetflixSans";
   font-size: 20px;
   font-weight: 600;
 }
@@ -183,7 +189,7 @@ form > div {
 
 #btnInput {
   width: 40%;
-  font-family: "NetflixSans-Mid";
+  font-family: "NetflixSans";
   font-size: 24px;
   font-weight: 600;
   text-align: left;
@@ -218,7 +224,7 @@ form > div {
 }
 
 .heading {
-  font-family: "NetflixSans-Mid";
+  font-family: "NetflixSans";
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -298,7 +304,7 @@ select {
 }
 
 .caraousal {
-  margin: 25px 0px 40px 0px;
+  margin: 25px 0px 70px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   row-gap: 15px;
@@ -322,10 +328,40 @@ select {
   position: absolute;
   align-self: self-start;
   justify-self: self-end;
-  font-family: NetflixSans-Bold;
+  font-family: "NetflixSans";
+  font-weight: 900;
   font-size: 100px;
   color: #ffffff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-fill-color: #000000;
   text-shadow: 0px 0px 32px rgba(0, 0, 0, 1);
+}
+
+.cards {
+  margin: 25px 0px 70px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  padding: 35px 20px 20px 20px;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 20px;
+  height: 280px;
+}
+h3 {
+  width: 90%;
+  font-family: "NetflixSans";
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 16px;
+  color: #ffffffb3;
 }
