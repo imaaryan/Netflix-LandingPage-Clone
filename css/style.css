@@ -30,17 +30,19 @@ body {
   justify-content: center;
   align-items: start;
   overflow-x: hidden;
+  color: white;
+  background-color: #000000;
 }
 
 .parent {
   width: 100%;
+  max-width: 100%; /* Changed from 1520px */
+  position: relative;
 }
 
 .hero-section {
-  height: 100vh;
-}
-
-.bg-image {
+  width: 100%;
+  min-height: 100vh; /* Changed from height to min-height for better responsiveness */
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.9),
@@ -49,7 +51,10 @@ body {
     ),
     url(../media/images/hero-banner.jpg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; /* Add this to prevent any potential overflow issues */
 }
 
 .logo img {
@@ -58,9 +63,13 @@ body {
 }
 
 nav {
+  width: 100%;
+  max-width: 1520px; /* Add this to maintain content width */
+  margin: 0 auto; /* Center the nav content */
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  padding: 20px 140px 20px 140px;
+  padding: 20px 140px;
 }
 
 .nav-link {
@@ -94,12 +103,15 @@ h1 {
 }
 
 .hero-title {
-  margin-top: 10%;
+  width: 100%;
+  max-width: 1520px;
+  margin: 10% auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .price-cta {
@@ -195,8 +207,11 @@ form > div {
 }
 
 .section2 {
+  box-sizing: border-box;
+  max-width: 1520px;
+  margin: 0 auto; /* Add this to maintain content width */
   position: relative;
-  padding: 20px 140px 20px 140px;
+  padding: 20px 140px;
   z-index: 3;
   background-color: black;
   margin-top: 80px;
@@ -278,6 +293,7 @@ select {
 
 .trend-filter {
   display: flex;
+  margin: 0px;
   gap: 20px;
 }
 
